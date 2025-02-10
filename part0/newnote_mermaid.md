@@ -8,12 +8,12 @@ sequenceDiagram
     server-->>browser: HTTP Status Code 302
     deactivate server
 
+    Note right of browser: The server asks the browser to perform a new HTTP GET request
+
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
     activate server
     server-->>browser: HTML document
     deactivate server
-
-    Note right of browser: The server asks the browser to perform a new HTTP GET request
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
     activate server
