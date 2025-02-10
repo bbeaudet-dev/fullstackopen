@@ -1,11 +1,16 @@
 ```mermaid
 sequenceDiagram
+    participant user
     participant browser
     participant server
 
+    user->>browser: Writes note clicks Submit
+    Note right of browser: The browser captures the users input and prepares to send to server 
+
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
     activate server
-    server-->>browser: HTTP Status Code 302
+    Note right of server: Server receives new note data and saves it
+    server-->>browser: HTTP Status Code 302, redirect to /notes
     deactivate server
 
     Note right of browser: The server asks the browser to perform a new HTTP GET request
