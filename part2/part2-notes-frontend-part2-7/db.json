@@ -16,19 +16,14 @@
       "important": true
     },
     {
-      "id": "ef47",
-      "content": "This is a new note",
+      "id": "5c1a",
+      "content": "asdf",
       "important": true
     },
     {
-      "id": "1c92",
-      "content": "This is a new note",
-      "important": false
-    },
-    {
-      "id": "3101",
-      "content": "This is a new note",
-      "important": false
+      "id": "d6f2",
+      "content": "hello, this isn't on the server",
+      "important": true
     }
   ]
 }
